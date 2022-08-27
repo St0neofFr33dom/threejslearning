@@ -30,9 +30,9 @@ function animate() {
     sphere.position.x = 2;
 
     if (sphereReachedTop === false){
-        sphere.position.y += 0.05;
+        sphere.position.y += (((3-sphere.position.y)/50) + 0.01);
     } else {
-        sphere.position.y -= 0.05;
+        sphere.position.y -= (((3-sphere.position.y)/50) + 0.01);
     }
 
     if (sphere.position.y >= 3){
